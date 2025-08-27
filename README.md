@@ -1,0 +1,1 @@
+# procesamiento-imagenes-2025-2
