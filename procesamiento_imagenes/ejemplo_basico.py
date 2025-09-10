@@ -13,5 +13,11 @@ imagen = cv2.imread("imagenes/naranja.jpg")
 # help(imagen)
 
 cv2.imshow("Naranja", imagen)
-# cv2.imwrite("imagenes/naranja_copia.jpg", imagen)
+cv2.waitKey(0)
+# Mostramos la imagen.
+
+imagen_gris = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
+# https://opencv.org/blog/color-spaces-in-opencv/
+
+cv2.imshow("NaranjaGris", imagen_gris)
 cv2.waitKey(0)
