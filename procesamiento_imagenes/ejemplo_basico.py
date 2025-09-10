@@ -14,6 +14,7 @@ imagen = cv2.imread("imagenes/naranja.jpg")
 
 cv2.imshow("Naranja", imagen)
 cv2.waitKey(0)
+cv2.destroyAllWindows() # Cerramos todas las ventanas abiertas por OpenCV
 # Mostramos la imagen.
 
 imagen_gris = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
@@ -21,3 +22,15 @@ imagen_gris = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow("NaranjaGris", imagen_gris)
 cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# quiero cambiar el tamaño a 200x200
+imagen_chica = cv2.resize(imagen, (200, 200))
+cv2.imshow("NaranjaChica", imagen_chica)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+img_line = cv2.line(imagen, (50,50), (200,50), (0,0,255), 2)
+cv2.imshow("NaranjaLinea", img_line)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
