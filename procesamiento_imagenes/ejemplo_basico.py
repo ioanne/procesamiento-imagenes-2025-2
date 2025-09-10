@@ -34,3 +34,9 @@ img_line = cv2.line(imagen, (50,50), (200,50), (0,0,255), 2)
 cv2.imshow("NaranjaLinea", img_line)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+# Quiero hacer detección de bordes con Canny
+imagen_canny = cv2.Canny(imagen, 100, 200)
+cv2.imshow("NaranjaCanny", imagen_canny)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
