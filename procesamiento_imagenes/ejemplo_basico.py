@@ -12,7 +12,7 @@ imagen = cv2.imread("imagenes/naranja.jpg")
 # Tambien podemos ver la ayuda de un objeto
 # help(imagen)
 
-cv2.imshow("Naranja", imagen)
+cv2.imshow("Naranja", imagen) # Esto es lo mas parecido a un print
 cv2.waitKey(0)
 cv2.destroyAllWindows() # Cerramos todas las ventanas abiertas por OpenCV
 # Mostramos la imagen.
