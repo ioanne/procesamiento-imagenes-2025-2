@@ -46,3 +46,4 @@ imagen_canny_inv = cv2.bitwise_not(imagen_canny)
 cv2.imshow("NaranjaCannyInv", imagen_canny_inv)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+# fin
